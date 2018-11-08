@@ -1,0 +1,16 @@
+# Ejemplo de una MT Multicinta
+# Transicion = Est. actual - Simbolos lectura de cada cinta - Est. siguiente - Simbolos escritura en cada cinta - Movimientos de cada cinta
+q0 q1 q2 q3 q4
+a b c
+a b c .
+q0
+.
+q4
+q0 a . . q1 a a . R R S
+q0 . . . q4 . . . S S S
+q1 a . . q1 a a . R R S
+q1 b . . q2 b . b R S R
+q2 b . . q2 b . b R S R
+q2 c . . q3 c . . S L L
+q3 c a b q3 c a b R L L
+q3 . . . q4 . . . S S S

@@ -1,0 +1,20 @@
+# MT que a partir de un numero binario separa 1s y 0s
+# Transicion = Est. actual - Simbolos lectura de cada cinta - Est. siguiente - Simbolos escritura en cada cinta - Movimientos de cada cinta
+q0 q1 q2 q3 q4
+1 0
+1 0 .
+q0
+.
+q1 q4
+q0 . . . q1 . . . R L L
+q0 1 . . q0 1 1 . R R S
+q0 0 . . q0 0 . 0 R S R
+q1 . 1 0 q3 1 1 0 R L S
+q1 . 1 . q3 1 1 . R L S
+q1 . . 0 q2 . . 0 S S S
+q2 . . 0 q2 0 . 0 R S L
+q2 . . . q4 . . . S R R
+q3 . 1 0 q3 1 1 0 R L S
+q3 . 1 . q3 1 1 . R L S
+q3 . . 0 q2 . . 0 R S S
+q3 . . . q4 . . . S R R
